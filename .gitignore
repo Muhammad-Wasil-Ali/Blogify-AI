@@ -1,0 +1,22 @@
+# Python venv
+bwa/
+venv/
+__pycache__/
+*.pyc
+
+# Env files
+backend/.env
+frontend/.env.local
+.env
+.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+
+# Backend outputs
+backend/outputs/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db

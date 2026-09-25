@@ -1,0 +1,6 @@
+venv/
+../bwa
+__pycache__/
+*.pyc
+.env
+outputs/
