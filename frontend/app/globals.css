@@ -1,0 +1,7 @@
+@import "tailwindcss";
+:root { --background: #f7f7f2; --foreground: #17211f; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--foreground); }
+button, input { font: inherit; }
+.prose h1, .prose h2, .prose h3 { color: #17211f; font-weight: 650; }
+.prose p, .prose li { color: #4f5e56; line-height: 1.8; }

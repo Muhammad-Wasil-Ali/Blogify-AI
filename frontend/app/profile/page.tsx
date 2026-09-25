@@ -1,0 +1,3 @@
+import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
+export default async function ProfilePage() { const { data: { user } } = await (await createClient()).auth.getUser(); if (!user) redirect("/"); return <div className="mx-auto max-w-4xl px-6 py-12"><p className="text-sm font-semibold uppercase tracking-wider text-violet-600">Account</p><h1 className="mt-2 text-3xl font-bold text-slate-950">Profile</h1><div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6"><p className="text-sm text-slate-500">Signed in as</p><p className="mt-2 font-medium text-slate-900">{user.email}</p></div></div>; }
